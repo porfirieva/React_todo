@@ -42,7 +42,7 @@
 /* общие стили */
 html {
   box-sizing: border-box;
-  background-color: #E5E5E5;
+  background-color: #F1F1F1;
 }
 
 *,
@@ -130,7 +130,7 @@ p {
   margin-left: auto;
 }
 
-.header__btn, .article__btn {
+.header__btn, .article__btn, .form_btn, .contacts_btn {
   background-color: transparent;
   color: #CC9933;
   padding: 13px;
@@ -154,6 +154,9 @@ p {
 
 .header__list {
   align-items: center;
+  background-image: url(../img/line.svg);
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .header__phone {
@@ -463,3 +466,222 @@ p {
   background-repeat: no-repeat;
   padding-right: 15px;
 } 
+
+/* wanna tour */
+.title_form {
+  padding-left: 0;
+  color: #000;
+}
+
+.wanna_container {
+  background-color:#E9E9E9;
+  border-radius: 15px;
+  padding: 38px 45px 71px 45px;
+}
+
+.option_form {
+  flex-wrap: wrap;
+  background-image: url(../img/line.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.option_form select {
+  padding-right: 10px;
+}
+
+.form_tour {
+  justify-content: space-between;
+}
+
+.wanna_form {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.about_form {
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+.option_form select, .option_form input, .option_form {
+  border: none;
+}
+
+.option_left {
+  width: 190px;
+}
+
+.option_left select{
+  width: 170px;
+  background-image: url(../img/arrowform.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 26px;
+}
+
+.option_right input {
+  width: 121px;
+}
+
+.option_right {
+  width: 160px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input.form_number {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.form_btn {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+/* contacts */
+ul {
+  margin: 0;
+  margin-bottom: 45px;
+  padding: 0;
+  list-style-type: none ;
+}
+
+.contacts_list {
+  margin-right: 50px;
+  width: 375px;
+}
+
+.contacts_item {
+  display: flex;
+  font-style: normal;
+  background-image: url(../img/line_contacts.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-bottom: 23px;
+}
+
+.contacts_item:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.container_contacts {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 45px;
+}
+
+.contacts_item div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.contacts_item_text {
+  font-style: normal;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  width: 145px;
+}
+
+.contacts_link {
+  line-height: 24px;
+  color: #CC9933;
+}
+
+.link_text {
+  line-height: 24px;
+  color: #999999;
+}
+
+.address_contacts {
+  padding-left: 55px;
+}
+
+.worktime {
+  padding-left: 35px
+}
+
+.contacts_btn {
+  padding: 27px 29px;
+  font-weight: 700;
+}
+
+/* footer */
+
+.footer-container {
+  padding: 50px;
+  display: flex;
+  line-height: 31px;
+  background-color: #333333;
+  border-radius: 15px;
+  background-image: url(../img/sun-footer.png);
+  background-repeat: no-repeat;
+  background-position: top 160px right 175px;
+}
+
+.footer-left {
+  width: 320px;
+  margin-right: 100px;
+}
+
+.footer-left p {
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+.footer-center {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts_link_number {
+  margin-bottom: 15px;
+}
+
+.footer-center p {
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-right {
+  margin-left: auto;
+}
+
+.social-link-item {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.tripadvisor {
+  background-image: url(../img/tripadvisor.svg);
+}
+
+.twitter {
+  background-image: url(../img/twitter.svg);
+}
+
+.facebook {
+  background-image: url(../img/facebook.svg);
+}
+
+.vk {
+  background-image: url(../img/vk.svg);
+}
+
+.instagram {
+  background-image: url(../img/instagram.svg);
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 20px;
+}
