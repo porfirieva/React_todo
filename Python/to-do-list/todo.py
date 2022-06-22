@@ -32,10 +32,12 @@ class todo:
     def add():
       content = self.text.get(1.0, END)
       self.main_text.insert(END, content)
+
       with open('data.txt', 'a') as file:
         file.write(content)
         file.seek(0)
         file.close()
+        
       self.text.delete(1.0, END)
 
     def delete():

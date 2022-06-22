@@ -1,0 +1,3 @@
+doing http-server
+codewars 0/2 tasks
+reading python-documentation
