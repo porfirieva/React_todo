@@ -1,0 +1,3 @@
+doing http-server
+reading python-documentation
+drink beer
