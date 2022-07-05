@@ -10,12 +10,12 @@ def appendToFile(fileName, newTodo):
       file.close()
     return ("Добавлено успешно")
 
-def deleteFromFile(fileName, toDelete):
+def deleteFromFile(fileName, indexTodo):
     with open(fileName, "r+") as file:
-      lastChange = file.readlines()
+      todos = file.readlines()
       file.seek(0)
       file.truncate()
-      for number, change in enumerate(lastChange):
-        if number not in [toDelete - 1]:
+      for number, change in enumerate(todos):
+        if number != indexTodo:
           file.write(change)
     return ("Позиция удалена")

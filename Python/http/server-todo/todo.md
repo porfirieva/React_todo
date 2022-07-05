@@ -1,13 +1,15 @@
-curl -d "tread about with" http://localhost:5000/add
-curl http://localhost:5000 
-
-POST:    curl -d "2" http://localhost:5000/delete
-GET:     curl http://localhost:5000/delete/2
-DELETE:  curl http://localhost:5000/delete/2
+GET_ALL:      curl http://localhost:5000/
+ADD_TODO:     curl -d "make Russia great again" http://localhost:5000/add
+DELETE_TODO:  curl -d "2" http://localhost:5000/delete
+CHANGE__TODO: curl -d "2@drink beer" http://localhost:5000/change
 
 ----
 
-- добавить метод удаления
++ добавить метод удаления
 - добавить метод изменения
 - смена статуса
 - срок исполнения
+
+
+-----
+source /opt/anaconda3/bin/activate base
