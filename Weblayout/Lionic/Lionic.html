@@ -6,6 +6,7 @@
   <title>Lionic</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
   <header class="header">
@@ -49,6 +50,11 @@
       </nav>
       <button class="btn header__btn btn-reset">
         Free trial
+      </button>
+      <button class="btn-reset burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
       </button>
     </div>
   </header>
@@ -323,7 +329,7 @@
                 <input class="form__input" type="text" name="name" placeholder="Name" required>
                 <input class="form__input" type="email" name="email" placeholder="E-mail" required>
                 <input class="form__input" type="phone" name="phone" placeholder="Phone" required>
-                <select class="form__select" name="country">
+                <select class="form__select form__input" name="country">
                   <option value="Country" disabled selected>Country</option>
                   <option value="United Kingdom">United Kingdom</option>
                   <option value="United States">United States</option>
