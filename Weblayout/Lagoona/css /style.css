@@ -118,7 +118,7 @@ p {
   transition: color 0.3s ease-in-out, outline 0.1s ease-in-out;
 }
 
-.header__lk:focus {
+.header__lk:focus-visible {
   color: var(--light-yellow);
   outline: 1px solid var(--light-yellow);
   outline-offset: 5px;
@@ -170,7 +170,8 @@ p {
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-.btn:focus {
+.btn:focus-visible {
+  outline: none;
   color: #fff;
   background-color: var(--light-yellow);
 }
@@ -213,7 +214,7 @@ p {
   transition: color 0.3s ease-in-out, outline 0.1s ease-in-out;
 }
 
-.header__phone:focus, .header__link:focus {
+.header__phone:focus-visible, .header__link:focus-visible {
   color: var(--light-yellow);
   outline: 1px solid var(--light-yellow);
   outline-offset: 5px;
@@ -301,7 +302,7 @@ p {
   transition: opacity 0.3s ease-in-out;
 }
 
-.offer__more:focus::after {
+.offer__more:focus-visible::after {
   opacity: 1;
 }
 
@@ -400,7 +401,7 @@ p {
   transition: opacity 0.3s ease-in-out;
 }
 
-.services__title__text:focus::before {
+.services__title__text:focus-visible::before {
   opacity: 1;
 } 
 
@@ -749,7 +750,8 @@ ul {
   transition: color 0.2s ease-in-out, outline 0.2s ease-in-out;
 }
 
-.footer__contacts__link:focus {
+.footer__contacts__link:focus-visible {
+  outline: 0;
   color: var(--light-yellow);
   outline: 1px solid var(--light-yellow);
   outline-offset: 1px;
@@ -836,22 +838,21 @@ ul {
   height: 25px;
 }
 
-.footer__item svg {
-  transition: fill 0.3s ease-in-out;
+.footer__link svg {
+  transition: fill 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .footer__item:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.footer__item:focus svg {
+
+.footer__link:focus-visible svg, .footer__link:hover svg  {
+  outline: none;
   fill:var(--light-yellow);
+  transform: scale(1.1);
 }
 
-.footer__item:hover svg {
-  fill:var(--light-yellow);
-}
-
-.footer__item:active svg {
+.footer__link:active svg {
   fill: var(--dark-yellow);
 }
