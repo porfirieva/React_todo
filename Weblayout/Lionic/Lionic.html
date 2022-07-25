@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
+  <script defer src="./js/script.js"></script>
 </head>
 <body>
   <header class="header">
@@ -295,7 +296,7 @@
             </li>
             <li class="contacts__item contacts__item__call flex">
               <strong class="contacts__item__caption">
-                Contacts Us
+                Call Us
               </strong>
               <a href="tel:+79876543210" class="contacts__item__link">
                 +7 (987) 654-32-10
@@ -322,14 +323,15 @@
     <section id="join-us" class="join-us section-offset">
       <div class="container">
         <h2 class="section-title join-us__title">Join us</h2>
-        <p class="join-us__descr">Take control of your paid subscriptions today!</p>
+        <p class="join-us__descr">Lionic guides you on making decisions for all aspects of your end-of-life plans.
+        </p>
         <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form" target="_blank">
            <div class="form__top flex">
               <div class="form__left flex">
-                <input class="form__input" type="text" name="name" placeholder="Name" required>
-                <input class="form__input" type="email" name="email" placeholder="E-mail" required>
+                <input class="form__input margin" type="text" name="name" placeholder="Name" required>
+                <input class="form__input margin" type="email" name="email" placeholder="E-mail" required>
                 <input class="form__input" type="phone" name="phone" placeholder="Phone" required>
-                <select class="form__select form__input" name="country">
+                <select class="form__select" name="country">
                   <option value="Country" disabled selected>Country</option>
                   <option value="United Kingdom">United Kingdom</option>
                   <option value="United States">United States</option>
