@@ -265,6 +265,24 @@
     margin-bottom: -20px;
   }
 
+  .articles-center {
+    display: block;
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  .articles-center--hidden {
+    display: none;
+  }
+  
+  .articles__item:nth-child(n + 3) {
+    display: none;
+  }
+  
+  .articles__item.articles__item-visible {
+    display: block;
+  }
+  
   .articles__title {
     margin-bottom: 20px;
   }
