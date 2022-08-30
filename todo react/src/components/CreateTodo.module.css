@@ -1,0 +1,26 @@
+.form {
+  margin-bottom: 40px;
+}
+
+.form__input {
+  width: 40%;
+  min-height: 30px;
+  padding: 10px;
+  font-size: 22px;
+  margin-right: 20px;
+}
+
+.form__input:hover {
+  border-color: #c7c7c7;
+}
+
+.form__input:active {
+  border-color: #707070;
+}
+
+.form__btn {
+  min-height: 30px;
+  padding: 10px;
+  font-size: 22px;
+  background: rgb(227,214,255);
+}

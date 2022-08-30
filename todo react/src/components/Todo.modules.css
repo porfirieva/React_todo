@@ -1,0 +1,33 @@
+.completed {
+  text-decoration: line-through;
+}
+
+.btn {
+  min-height: 20px;
+  padding: 5px;
+  font-size: 18px;
+  background: rgb(227,214,255);
+}
+
+.complete {
+  margin-right: 20px;
+}
+
+.todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 60%;
+  padding: 10px;
+  border: 1px solid #707070;
+}
+
+.todo:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.todo__item {
+  margin-right: 20px;
+  font-size: 22px;
+}
