@@ -6,20 +6,29 @@ const CreateTodo = ({ inputText, setInputText, todos, setTodos }) => {
   };
 
   const submitTodoHandler = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // очищаем инпут после добавления нового дела
     setTodos([
       ...todos,
-      { text: inputText, completed: false, id: Math.random() * 1000 },
+      { text: inputText, completed: false, id: Math.random() * 1000 }, // передаем в стэйт объект
     ]);
-    setInputText("");
+    setInputText(""); // обновляем стейт после клика на кнопку
   };
 
   return (
     <div>
       <h1>Список дел</h1>
       <form className={style.form}>
-        <input value={inputText} onChange={inputTextHandler} placeholder="Что делаем?" className={style.form__input}></input>
-        <button onClick={submitTodoHandler} type="submit" className={style.form__btn}>
+        <input
+          value={inputText}
+          onChange={inputTextHandler} //обработчик инпута
+          placeholder="Что делаем?"
+          className={style.form__input}
+        ></input>
+        <button
+          onClick={submitTodoHandler} //обработчик кнопки
+          type="submit"
+          className={style.form__btn}
+        >
           Добавить дело
         </button>
       </form>

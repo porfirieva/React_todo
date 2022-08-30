@@ -1,7 +1,7 @@
-import "./Todo.modules.css"
+import "./Todo.modules.css";
 const Todo = ({ text, todo, todos, setTodos }) => {
   const deleteHandler = () => {
-    setTodos(todos.filter((el) => el.id !== todo.id));
+    setTodos(todos.filter((el) => el.id !== todo.id)); //удаление элемента по id
   };
 
   const completeHandler = () => {
@@ -10,7 +10,7 @@ const Todo = ({ text, todo, todos, setTodos }) => {
         if (item.id === todo.id) {
           return {
             ...item,
-            completed: !item.completed,
+            completed: !item.completed, //cмена статуса выполненности задачи
           };
         }
         return item;
@@ -18,8 +18,11 @@ const Todo = ({ text, todo, todos, setTodos }) => {
     );
   };
   return (
+    //возвращаем тудушку, по клику на "готово" добавляем класс, обозначающий статус готовности
     <div className="todo">
-      <li className={`todo__item ${todo.completed ? "completed" : ""}`}>{text}</li>
+      <li className={`todo__item ${todo.completed ? "completed" : ""}`}>
+        {text}
+      </li>
       <button onClick={completeHandler} className="btn complete">
         Готово
       </button>
