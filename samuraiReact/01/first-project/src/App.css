@@ -9,3 +9,7 @@
 .content-wrapper {
   background-color: bisque;
 }
+
+.list-reset {
+  list-style: none;
+}
